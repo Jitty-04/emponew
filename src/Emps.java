@@ -86,8 +86,22 @@ public class Emps {
                             }
                         }
                         break;
+                    case 4 :
+                        System.out.println("Enter the employee code");
+                        Scanner obj2 = new Scanner(System.in);
+                        int ecode2 = obj2.nextInt();
+                        for (Employee e1 : earr){
+                            if (ecode2 == e1.code){
+                                earr.remove(e1);
+                            }
+                        }
+                        break;
                 }
             }
         }
     }
 }
+
+
+
+
